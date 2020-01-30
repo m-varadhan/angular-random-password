@@ -25,7 +25,7 @@ export class RandomPasswordComponent implements OnInit {
   onMouseMove(e: MouseEvent) {
     if(e) {
       this.mouseOut = e.clientX + ":" + e.clientY + ":" + e.screenX + ":" + e.screenY;
-      this.randomSeed = e.clientX + e.clientY +  e.screenX + e.screenY ;
+      this.randomSeed += e.clientX + e.clientY +  e.screenX + e.screenY ;
     }
   }
 
